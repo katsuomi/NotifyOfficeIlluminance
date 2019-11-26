@@ -19,7 +19,7 @@ func (_ IlluminanceRepository) GetAll() ([]Illuminance, error) {
 	if err := db.Table("illuminances").Select("id, illuminance").Scan(&i).Error; err != nil {
 		return nil, err
 	}
-	return u, nil
+	return i, nil
 }
 
 // CreateModel is create Illuminance model
