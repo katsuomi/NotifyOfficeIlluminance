@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"net/http"
-	"fmt"
 
 	"github.com/gin-gonic/gin"
 	"github.com/katsuomi/NotifyOfficeIlluminance/models/repository"
@@ -25,7 +24,6 @@ func (pc IlluminanceController) Index(c *gin.Context) {
 
 // Create action: POST /illuminances
 func (pc IlluminanceController) Create(c *gin.Context) {
-	fmt.Println(c)
 	var i repository.IlluminanceRepository
 	p, err := i.CreateModel(c)
 
