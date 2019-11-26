@@ -1,9 +1,11 @@
 package db
 
 import (
+	
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres" // Use PostgreSQL in gorm
 	"github.com/katsuomi/NotifyOfficeIlluminance/models"
+	"github.com/katsuomi/NotifyOfficeIlluminance/time"
 )
 
 var (
@@ -19,9 +21,9 @@ func Init() {
 	}
 	autoMigration()
 	illuminance := models.Illuminance{
-		ID:    1,
+		ID:           1,
 		Illuminance:  2430,
-		CreatedAt: "2019-11-26T12:08:19+09:00"
+		CreatedAt:    time.Time(),
 	}
 	db.Create(&illuminance)
 }
