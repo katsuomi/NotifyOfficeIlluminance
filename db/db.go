@@ -21,6 +21,7 @@ func Init() {
 	illuminance := models.Illuminance{
 		ID:    1,
 		Illuminance:  2430,
+		CreatedAt: "2019-11-26T12:08:19+09:00"
 	}
 	db.Create(&illuminance)
 }
