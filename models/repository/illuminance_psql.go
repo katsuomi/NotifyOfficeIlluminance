@@ -16,7 +16,7 @@ type Illuminance models.Illuminance
 func (_ IlluminanceRepository) GetAll() ([]Illuminance, error) {
 	db := db.GetDB()
 	var i []Illuminance
-	if err := db.Table("illuminances").Select("id, illuminance").Scan(&i).Error; err != nil {
+	if err := db.Table("illuminances").Select("id, illuminance, created_at").Scan(&i).Error; err != nil {
 		return nil, err
 	}
 	return i, nil
