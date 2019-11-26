@@ -1,11 +1,9 @@
 package db
 
 import (
-	
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres" // Use PostgreSQL in gorm
 	"github.com/katsuomi/NotifyOfficeIlluminance/models"
-	"github.com/katsuomi/NotifyOfficeIlluminance/time"
 )
 
 var (
@@ -20,12 +18,6 @@ func Init() {
 		panic(err)
 	}
 	autoMigration()
-	illuminance := models.Illuminance{
-		ID:           1,
-		Illuminance:  2430,
-		CreatedAt:    time.Time(),
-	}
-	db.Create(&illuminance)
 }
 
 // GetDB is called in models
