@@ -3,7 +3,6 @@ package time
 import (
   "time"
   "strings"
-  "fmt"
 )
 
 func Time() time.Time{
