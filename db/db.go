@@ -13,14 +13,14 @@ var (
 
 // Init is initialize db from main function
 func Init() {
-	db, err = gorm.Open("postgres", "host=db port=5432 user=Illuminance dbname=Illuminance password=Illuminance sslmode=disable")
+	db, err = gorm.Open("postgres", "host=db port=5432 user=NotifyOfficeIlluminance dbname=NotifyOfficeIlluminance password=NotifyOfficeIlluminance sslmode=disable")
 	if err != nil {
 		panic(err)
 	}
 	autoMigration()
 	illuminance := models.Illuminance{
 		ID:    1,
-		Illuminance:  "aoki",
+		Illuminance:  2430,
 	}
 	db.Create(&illuminance)
 }
