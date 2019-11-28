@@ -55,9 +55,3 @@ else:
  if now_hour_int > 10:
   print("実行します")
   sendMessage()
-
-
-
-
-
-
