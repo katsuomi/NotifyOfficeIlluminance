@@ -10,7 +10,7 @@ You can figure out if there are people in the office at night.
 
 ## 📱architecture
 
-<img width="861" alt="スクリーンショット 2019-11-29 15 55 11" src="https://user-images.githubusercontent.com/36298285/69849638-a3d6b700-12c0-11ea-9985-c1d4bbee98c5.png">
+<img width="852" alt="スクリーンショット 2019-11-29 16 01 45" src="https://user-images.githubusercontent.com/36298285/69850002-90781b80-12c1-11ea-95dc-73785ce12ec4.png">
 
 ## 🌻 Version
 
