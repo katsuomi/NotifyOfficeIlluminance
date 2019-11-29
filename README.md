@@ -15,6 +15,6 @@ You can figure out if there are people in the office at night.
 ## 🌻 Version
 
 ||Name|Version|What|
-|:-:|:-:|:-:|:-|
-||Raspbian|9.4|os|
-||python|3.7.0|高級言語|
+|:-:|:-:|:-|
+|Raspbian|9.4|os|
+|python|3.7.0|高級言語|
