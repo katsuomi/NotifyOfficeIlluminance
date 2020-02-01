@@ -17,4 +17,4 @@ You can figure out if there are people in the office at night.
 |Name|Version|What|
 |:-:|:-:|:-|
 |Raspbian|9.4|OS|
-|Python|3.7.0|高級言語|
+|Python|3.7.0|High-level languages|
